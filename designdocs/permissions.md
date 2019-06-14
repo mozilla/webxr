@@ -10,12 +10,12 @@ Currently we are having difficulties finding a solution that all parties can agr
 
 * what permissions are available to be asked for
 * how granular are these permissions
-* are the permissions granted at page load / application start
+* are the permissions granted at XR session request time
 * or are the permissions granted at the time of use.
 
 ### stating concerns
 
-Concerns about granting at page load time are
+Concerns about granting at XR session request time are
 * users may be requested to approve multiple permissions one after another, creating click fatigue.
 * if all apps request permissions at start, the user has no information to judge whether or not they should grant this, because they haven’t entered the experience yet.
 * multiple permissions requests could be confusing. For example, if the UA initially creates an AR session with just poses + hit test, it may show a session consent prompt that says "the site does not get access to camera images". If the app then requests camera frames during the session, it would be confusing to pop up a new prompt that contradicts this and asks for site camera access after all.
