@@ -73,7 +73,7 @@ This system has two advantages over other approaches.
 * the developer has a single code path that will always be followed.  They will not need to write conditional code to work around different user agent authentication systems.
 * this gives the user agent maximum flexibility to adapt behavior to the current situation. 
 
-User agents have the freedom to implement many different behaviors which would be perfectly valid under this spec. Here are a few possible (non-prescriptive) examples of what a UA could do:
+User agents have the freedom to implement many different behaviors which would be perfectly valid under this spec (where allowable by related specifications). Here are a few possible (non-prescriptive) examples of what a UA could do:
 
 * request all permissions of the user at start, as a series of prompts
 * collapse all permissions into a single prompt
