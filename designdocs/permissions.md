@@ -18,6 +18,7 @@ Currently we are having difficulties finding a solution that all parties can agr
 Concerns about granting at page load time are
 * users may be requested to approve multiple permissions one after another, creating click fatigue.
 * if all apps request permissions at start, the user has no information to judge whether or not they should grant this, because they haven’t entered the experience yet.
+* multiple permissions requests could be confusing. For example, if the UA initially creates an AR session with just poses + hit test, it may show a session consent prompt that says "the site does not get access to camera images". If the app then requests camera frames during the session, it would be confusing to pop up a new prompt that contradicts this and asks for site camera access after all.
 
 Concerns about granting requests once already inside of immersive mode are:
 * access requests when inside immersive mode should be done with some sort of a secure method, such as a dedicated hardware button, so that applications cannot spoof such permissions.
