@@ -31,7 +31,7 @@ Concerns about both systems include:
 There are most likely more concerns than just what I have listed above.
 
 ### Solution
-To address these I propose the following: *do both*.  Let the developers have a single code path where they /request permissions at application start/ *and* when /the permission is actually needed/. The first request is considered the upper bounds of possible permissions. The user agent can decide whether to actually show user request dialogs at app time or when the permission is actually used, or some other scheme that the user agent deems to be better (such as warding off new attacks in the future).
+To address these I propose the following: *do both*.  Let the developers have a single code path where they request permissions at *session request* and when *the permission is actually needed*. The first request is considered the upper bounds of possible permissions. The user agent can decide whether to actually show user request dialogs at app time or when the permission is actually used, or some other scheme that the user agent deems to be better (such as warding off new attacks in the future).
 
 ### Details
 From the developer’s perspective it would work like this.
